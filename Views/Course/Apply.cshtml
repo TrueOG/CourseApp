@@ -1,0 +1,41 @@
+@model Student
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE_edge">
+<title>Apply</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+
+    <form asp-action="apply" method="POST">
+
+        <p>
+            <label asp-for="Name">Adınız</label>
+            <input asp-for="Name">
+        </p>
+        <p>
+            <label asp-for="Email">Eposta</label>
+            <input asp-for="Email">
+        </p>
+        <p>
+            <label asp-for="Phone">Telefon</label>
+            <input asp-for="Phone">
+        </p>
+        <p>
+            <label asp-for="Confirm">Kursa katılacak mısınız?</label>
+            <select asp-for="Confirm">
+                <option value="">Seçiniz</option>
+                <option value="true">Evet, geliyorum</option>
+                <option value="false">Hayır, gelmiyorum</option>
+            </select>
+        </p>
+        
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

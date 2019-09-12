@@ -1,0 +1,25 @@
+@model Student
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE_edge">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+
+    <h2>Merhaba, @Model.Name</h2>
+    <hr>
+    @if(Model.Confirm==true){
+        <span>
+            Kursa katıldığınız için mutlu olduk.
+        </span>
+    }else {
+        <span>
+        Üzüldük. Umarım fikriniz değişir.
+        </span>
+    }
+
+</body>
+</html>
